@@ -24,6 +24,10 @@ class LoanOfferInteractor: LoanOfferInteractorInput {
     }
 
     func getOffer() {
-        
+        if let amount = amount, let period = period {
+            presenter?.showOffer(amount: amount, period: period)
+        } else {
+            presenter?.showSorryView()
+        }
     }
 }

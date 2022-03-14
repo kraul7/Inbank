@@ -21,16 +21,16 @@ class LoanOfferPresenter: LoanOfferPresenterInput {
     }
 
     func didAppear() {
-
+        interactor.getOffer()
     }
 }
 
 extension LoanOfferPresenter: LoanOfferInteractorOutput {
     func showSorryView() {
-
+        view?.showSorryView()
     }
 
     func showOffer(amount: Int, period: Int) {
-
+        view?.showOffer(amount: amount, period: period)
     }
 }

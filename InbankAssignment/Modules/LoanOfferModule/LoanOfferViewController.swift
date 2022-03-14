@@ -24,7 +24,6 @@ class LoanOfferViewController: UIViewController {
         label.autoAlignAxis(toSuperviewAxis: .horizontal)
         label.numberOfLines = 0
         label.textAlignment = .center
-
     }
 
     required init?(coder: NSCoder) {

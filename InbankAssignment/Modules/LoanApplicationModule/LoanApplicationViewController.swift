@@ -34,7 +34,6 @@ class LoanApplicationViewController: UIViewController {
         container.addArrangedSubview(personalIdField)
         personalIdField.autoMatch(.width, to: .width, of: container)
 
-        //let actionButton = UIButton(frame: .zero)
         var buttonConfig = UIButton.Configuration.filled()
         buttonConfig.title = "Submit"
         buttonConfig.baseBackgroundColor = .purple

@@ -25,6 +25,8 @@
 		C447EF6027DF7CF40088A89A /* LoanApplicationProtoocols.swift in Sources */ = {isa = PBXBuildFile; fileRef = C447EF5F27DF7CF30088A89A /* LoanApplicationProtoocols.swift */; };
 		C447EF6227DF7D090088A89A /* LoanApplicationRouter.swift in Sources */ = {isa = PBXBuildFile; fileRef = C447EF6127DF7D090088A89A /* LoanApplicationRouter.swift */; };
 		C447EF6427DF7D1A0088A89A /* LoanApplicationViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C447EF6327DF7D1A0088A89A /* LoanApplicationViewController.swift */; };
+		C447EF6727DF82690088A89A /* PureLayout.xcframework in Frameworks */ = {isa = PBXBuildFile; fileRef = C447EF6627DF82690088A89A /* PureLayout.xcframework */; };
+		C447EF6827DF82690088A89A /* PureLayout.xcframework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = C447EF6627DF82690088A89A /* PureLayout.xcframework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -36,6 +38,20 @@
 			remoteInfo = InbankAssignment;
 		};
 /* End PBXContainerItemProxy section */
+
+/* Begin PBXCopyFilesBuildPhase section */
+		C447EF6927DF82690088A89A /* Embed Frameworks */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "";
+			dstSubfolderSpec = 10;
+			files = (
+				C447EF6827DF82690088A89A /* PureLayout.xcframework in Embed Frameworks */,
+			);
+			name = "Embed Frameworks";
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXCopyFilesBuildPhase section */
 
 /* Begin PBXFileReference section */
 		C447EF0B27DF75C50088A89A /* InbankAssignment.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = InbankAssignment.app; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -59,6 +75,7 @@
 		C447EF5F27DF7CF30088A89A /* LoanApplicationProtoocols.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoanApplicationProtoocols.swift; sourceTree = "<group>"; };
 		C447EF6127DF7D090088A89A /* LoanApplicationRouter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoanApplicationRouter.swift; sourceTree = "<group>"; };
 		C447EF6327DF7D1A0088A89A /* LoanApplicationViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoanApplicationViewController.swift; sourceTree = "<group>"; };
+		C447EF6627DF82690088A89A /* PureLayout.xcframework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcframework; name = PureLayout.xcframework; path = Carthage/Build/PureLayout.xcframework; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -66,6 +83,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				C447EF6727DF82690088A89A /* PureLayout.xcframework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -85,6 +103,7 @@
 				C447EF0D27DF75C50088A89A /* InbankAssignment */,
 				C447EF2427DF75C70088A89A /* InbankAssignmentTests */,
 				C447EF0C27DF75C50088A89A /* Products */,
+				C447EF6527DF82690088A89A /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -194,6 +213,14 @@
 			path = LoanApplicationModule;
 			sourceTree = "<group>";
 		};
+		C447EF6527DF82690088A89A /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				C447EF6627DF82690088A89A /* PureLayout.xcframework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -204,6 +231,7 @@
 				C447EF0727DF75C50088A89A /* Sources */,
 				C447EF0827DF75C50088A89A /* Frameworks */,
 				C447EF0927DF75C50088A89A /* Resources */,
+				C447EF6927DF82690088A89A /* Embed Frameworks */,
 			);
 			buildRules = (
 			);

@@ -27,6 +27,8 @@
 		C447EF6427DF7D1A0088A89A /* LoanApplicationViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C447EF6327DF7D1A0088A89A /* LoanApplicationViewController.swift */; };
 		C447EF6727DF82690088A89A /* PureLayout.xcframework in Frameworks */ = {isa = PBXBuildFile; fileRef = C447EF6627DF82690088A89A /* PureLayout.xcframework */; };
 		C447EF6827DF82690088A89A /* PureLayout.xcframework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = C447EF6627DF82690088A89A /* PureLayout.xcframework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
+		C447EF6B27DF82DC0088A89A /* LoanDataField.swift in Sources */ = {isa = PBXBuildFile; fileRef = C447EF6A27DF82DC0088A89A /* LoanDataField.swift */; };
+		C447EF6E27DF83360088A89A /* UIStackview+extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = C447EF6D27DF83360088A89A /* UIStackview+extensions.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -76,6 +78,8 @@
 		C447EF6127DF7D090088A89A /* LoanApplicationRouter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoanApplicationRouter.swift; sourceTree = "<group>"; };
 		C447EF6327DF7D1A0088A89A /* LoanApplicationViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoanApplicationViewController.swift; sourceTree = "<group>"; };
 		C447EF6627DF82690088A89A /* PureLayout.xcframework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcframework; name = PureLayout.xcframework; path = Carthage/Build/PureLayout.xcframework; sourceTree = "<group>"; };
+		C447EF6A27DF82DC0088A89A /* LoanDataField.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoanDataField.swift; sourceTree = "<group>"; };
+		C447EF6D27DF83360088A89A /* UIStackview+extensions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIStackview+extensions.swift"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -179,6 +183,7 @@
 		C447EF5127DF7A610088A89A /* Utils */ = {
 			isa = PBXGroup;
 			children = (
+				C447EF6C27DF83240088A89A /* Extensions */,
 				C447EF5227DF7A670088A89A /* Validators */,
 			);
 			path = Utils;
@@ -209,6 +214,7 @@
 				C447EF5F27DF7CF30088A89A /* LoanApplicationProtoocols.swift */,
 				C447EF6127DF7D090088A89A /* LoanApplicationRouter.swift */,
 				C447EF6327DF7D1A0088A89A /* LoanApplicationViewController.swift */,
+				C447EF6A27DF82DC0088A89A /* LoanDataField.swift */,
 			);
 			path = LoanApplicationModule;
 			sourceTree = "<group>";
@@ -219,6 +225,14 @@
 				C447EF6627DF82690088A89A /* PureLayout.xcframework */,
 			);
 			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		C447EF6C27DF83240088A89A /* Extensions */ = {
+			isa = PBXGroup;
+			children = (
+				C447EF6D27DF83360088A89A /* UIStackview+extensions.swift */,
+			);
+			path = Extensions;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -328,7 +342,9 @@
 				C447EF4A27DF79730088A89A /* CreditScoreService.swift in Sources */,
 				C447EF4427DF77380088A89A /* LoanConstraints.swift in Sources */,
 				C447EF6227DF7D090088A89A /* LoanApplicationRouter.swift in Sources */,
+				C447EF6B27DF82DC0088A89A /* LoanDataField.swift in Sources */,
 				C447EF4227DF77180088A89A /* AppModule.swift in Sources */,
+				C447EF6E27DF83360088A89A /* UIStackview+extensions.swift in Sources */,
 				C447EF5427DF7A7C0088A89A /* LoanApplicationValidator.swift in Sources */,
 				C447EF5627DF7BD50088A89A /* DecisionService.swift in Sources */,
 				C447EF6427DF7D1A0088A89A /* LoanApplicationViewController.swift in Sources */,

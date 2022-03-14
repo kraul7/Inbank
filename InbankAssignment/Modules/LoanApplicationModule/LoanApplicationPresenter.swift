@@ -21,26 +21,33 @@ class LoanApplicationPresenter: LoanApplicationPresenterProtocol {
     }
 
     func didSubmit(amount: Int, period: Int, personalId: String) {
-
+        view?.showLoading()
+        interactor.submitApplication(amount: amount, period: period, personalId: personalId)
     }
 
     func showAmountError(with text: String) {
-
+        view?.hideLoading()
+        view?.showAmountError(with: text)
     }
 
     func showPeriodError(with text: String) {
-
+        view?.hideLoading()
+        view?.showPeriodError(with: text)
     }
 
     func showPersonalIdError(with text: String) {
-
+        view?.hideLoading()
+        view?.showPersonalIdError(with: text)
     }
 
     func approvedOffer(amount: Int, period: Int) {
-
+        view?.hideLoading()
+        router.routeToLoanOffer(amount: amount, period: period)
     }
 
     func offerDeclined() {
+        view?.hideLoading()
+        router.routeToDeclinedOffer()
 
     }
 }

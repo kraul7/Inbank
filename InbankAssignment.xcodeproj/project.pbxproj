@@ -18,6 +18,7 @@
 		C447EF4D27DF79F10088A89A /* DecisionEngine.swift in Sources */ = {isa = PBXBuildFile; fileRef = C447EF4C27DF79F10088A89A /* DecisionEngine.swift */; };
 		C447EF5027DF7A490088A89A /* LoanModels.swift in Sources */ = {isa = PBXBuildFile; fileRef = C447EF4F27DF7A490088A89A /* LoanModels.swift */; };
 		C447EF5427DF7A7C0088A89A /* LoanApplicationValidator.swift in Sources */ = {isa = PBXBuildFile; fileRef = C447EF5327DF7A7C0088A89A /* LoanApplicationValidator.swift */; };
+		C447EF5627DF7BD50088A89A /* DecisionService.swift in Sources */ = {isa = PBXBuildFile; fileRef = C447EF5527DF7BD50088A89A /* DecisionService.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -45,6 +46,7 @@
 		C447EF4C27DF79F10088A89A /* DecisionEngine.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DecisionEngine.swift; sourceTree = "<group>"; };
 		C447EF4F27DF7A490088A89A /* LoanModels.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoanModels.swift; sourceTree = "<group>"; };
 		C447EF5327DF7A7C0088A89A /* LoanApplicationValidator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoanApplicationValidator.swift; sourceTree = "<group>"; };
+		C447EF5527DF7BD50088A89A /* DecisionService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DecisionService.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -121,6 +123,7 @@
 			children = (
 				C447EF4E27DF7A280088A89A /* Models */,
 				C447EF4927DF79730088A89A /* CreditScoreService.swift */,
+				C447EF5527DF7BD50088A89A /* DecisionService.swift */,
 			);
 			path = Services;
 			sourceTree = "<group>";
@@ -263,6 +266,7 @@
 				C447EF4427DF77380088A89A /* LoanConstraints.swift in Sources */,
 				C447EF4227DF77180088A89A /* AppModule.swift in Sources */,
 				C447EF5427DF7A7C0088A89A /* LoanApplicationValidator.swift in Sources */,
+				C447EF5627DF7BD50088A89A /* DecisionService.swift in Sources */,
 				C447EF5027DF7A490088A89A /* LoanModels.swift in Sources */,
 				C447EF4D27DF79F10088A89A /* DecisionEngine.swift in Sources */,
 			);

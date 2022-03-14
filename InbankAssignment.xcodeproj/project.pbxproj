@@ -15,6 +15,9 @@
 		C447EF4227DF77180088A89A /* AppModule.swift in Sources */ = {isa = PBXBuildFile; fileRef = C447EF4127DF77180088A89A /* AppModule.swift */; };
 		C447EF4427DF77380088A89A /* LoanConstraints.swift in Sources */ = {isa = PBXBuildFile; fileRef = C447EF4327DF77380088A89A /* LoanConstraints.swift */; };
 		C447EF4A27DF79730088A89A /* CreditScoreService.swift in Sources */ = {isa = PBXBuildFile; fileRef = C447EF4927DF79730088A89A /* CreditScoreService.swift */; };
+		C447EF4D27DF79F10088A89A /* DecisionEngine.swift in Sources */ = {isa = PBXBuildFile; fileRef = C447EF4C27DF79F10088A89A /* DecisionEngine.swift */; };
+		C447EF5027DF7A490088A89A /* LoanModels.swift in Sources */ = {isa = PBXBuildFile; fileRef = C447EF4F27DF7A490088A89A /* LoanModels.swift */; };
+		C447EF5427DF7A7C0088A89A /* LoanApplicationValidator.swift in Sources */ = {isa = PBXBuildFile; fileRef = C447EF5327DF7A7C0088A89A /* LoanApplicationValidator.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -39,6 +42,9 @@
 		C447EF4127DF77180088A89A /* AppModule.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppModule.swift; sourceTree = "<group>"; };
 		C447EF4327DF77380088A89A /* LoanConstraints.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoanConstraints.swift; sourceTree = "<group>"; };
 		C447EF4927DF79730088A89A /* CreditScoreService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CreditScoreService.swift; sourceTree = "<group>"; };
+		C447EF4C27DF79F10088A89A /* DecisionEngine.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DecisionEngine.swift; sourceTree = "<group>"; };
+		C447EF4F27DF7A490088A89A /* LoanModels.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoanModels.swift; sourceTree = "<group>"; };
+		C447EF5327DF7A7C0088A89A /* LoanApplicationValidator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoanApplicationValidator.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -80,6 +86,8 @@
 		C447EF0D27DF75C50088A89A /* InbankAssignment */ = {
 			isa = PBXGroup;
 			children = (
+				C447EF5127DF7A610088A89A /* Utils */,
+				C447EF4B27DF79D80088A89A /* DecisionEngine */,
 				C447EF4627DF79020088A89A /* Services */,
 				C447EF3E27DF76BA0088A89A /* App */,
 				C447EF1727DF75C70088A89A /* Assets.xcassets */,
@@ -111,9 +119,42 @@
 		C447EF4627DF79020088A89A /* Services */ = {
 			isa = PBXGroup;
 			children = (
+				C447EF4E27DF7A280088A89A /* Models */,
 				C447EF4927DF79730088A89A /* CreditScoreService.swift */,
 			);
 			path = Services;
+			sourceTree = "<group>";
+		};
+		C447EF4B27DF79D80088A89A /* DecisionEngine */ = {
+			isa = PBXGroup;
+			children = (
+				C447EF4C27DF79F10088A89A /* DecisionEngine.swift */,
+			);
+			path = DecisionEngine;
+			sourceTree = "<group>";
+		};
+		C447EF4E27DF7A280088A89A /* Models */ = {
+			isa = PBXGroup;
+			children = (
+				C447EF4F27DF7A490088A89A /* LoanModels.swift */,
+			);
+			path = Models;
+			sourceTree = "<group>";
+		};
+		C447EF5127DF7A610088A89A /* Utils */ = {
+			isa = PBXGroup;
+			children = (
+				C447EF5227DF7A670088A89A /* Validators */,
+			);
+			path = Utils;
+			sourceTree = "<group>";
+		};
+		C447EF5227DF7A670088A89A /* Validators */ = {
+			isa = PBXGroup;
+			children = (
+				C447EF5327DF7A7C0088A89A /* LoanApplicationValidator.swift */,
+			);
+			path = Validators;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -221,6 +262,9 @@
 				C447EF4A27DF79730088A89A /* CreditScoreService.swift in Sources */,
 				C447EF4427DF77380088A89A /* LoanConstraints.swift in Sources */,
 				C447EF4227DF77180088A89A /* AppModule.swift in Sources */,
+				C447EF5427DF7A7C0088A89A /* LoanApplicationValidator.swift in Sources */,
+				C447EF5027DF7A490088A89A /* LoanModels.swift in Sources */,
+				C447EF4D27DF79F10088A89A /* DecisionEngine.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

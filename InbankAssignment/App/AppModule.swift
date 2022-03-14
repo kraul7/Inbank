@@ -13,6 +13,8 @@ protocol AppModule {
 
 protocol ModuleFactory {
     func makeLoanApplication(with navigationController: UINavigationController) -> LoanApplicationModule
+    func makeLoanOffer(with navigationController: UINavigationController, amount: Int, period: Int) -> LoanOfferModule
+    func makeSorryOffer(with navigationController: UINavigationController) -> LoanOfferModule
 }
 
 struct ModuleFactoryImpl: ModuleFactory {
@@ -33,5 +35,23 @@ struct ModuleFactoryImpl: ModuleFactory {
                                      router: router,
                                      interactor: interactor,
                                      presenter: presenter)
+    }
+
+    func makeLoanOffer(with navigationController: UINavigationController, amount: Int, period: Int) -> LoanOfferModule {
+        let router = LoanOfferRouter(navigationController: navigationController, moduleFactory: self)
+        let view = LoanOfferViewController()
+        let interactor = LoanOfferInteractor(amount: amount, period: period)
+        let presenter = LoanOfferPresenter(view: view, interactor: interactor, router: router)
+
+        return LoanOfferModule(view: view, router: router, interactor: interactor, presenter: presenter)
+    }
+
+    func makeSorryOffer(with navigationController: UINavigationController) -> LoanOfferModule {
+        let router = LoanOfferRouter(navigationController: navigationController, moduleFactory: self)
+        let view = LoanOfferViewController()
+        let interactor = LoanOfferInteractor()
+        let presenter = LoanOfferPresenter(view: view, interactor: interactor, router: router)
+
+        return LoanOfferModule(view: view, router: router, interactor: interactor, presenter: presenter)
     }
 }

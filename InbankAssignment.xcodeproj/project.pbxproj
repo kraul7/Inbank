@@ -29,6 +29,12 @@
 		C447EF6827DF82690088A89A /* PureLayout.xcframework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = C447EF6627DF82690088A89A /* PureLayout.xcframework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
 		C447EF6B27DF82DC0088A89A /* LoanDataField.swift in Sources */ = {isa = PBXBuildFile; fileRef = C447EF6A27DF82DC0088A89A /* LoanDataField.swift */; };
 		C447EF6E27DF83360088A89A /* UIStackview+extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = C447EF6D27DF83360088A89A /* UIStackview+extensions.swift */; };
+		C447EF7227DF8B330088A89A /* LoanOfferInteractor.swift in Sources */ = {isa = PBXBuildFile; fileRef = C447EF7127DF8B330088A89A /* LoanOfferInteractor.swift */; };
+		C447EF7427DF8B400088A89A /* LoanOfferModule.swift in Sources */ = {isa = PBXBuildFile; fileRef = C447EF7327DF8B400088A89A /* LoanOfferModule.swift */; };
+		C447EF7627DF8B8C0088A89A /* LoanOfferPresenter.swift in Sources */ = {isa = PBXBuildFile; fileRef = C447EF7527DF8B8C0088A89A /* LoanOfferPresenter.swift */; };
+		C447EF7827DF8B9A0088A89A /* LoanOfferProtocols.swift in Sources */ = {isa = PBXBuildFile; fileRef = C447EF7727DF8B9A0088A89A /* LoanOfferProtocols.swift */; };
+		C447EF7A27DF8BA70088A89A /* LoanOfferRouter.swift in Sources */ = {isa = PBXBuildFile; fileRef = C447EF7927DF8BA70088A89A /* LoanOfferRouter.swift */; };
+		C447EF7C27DF8BB40088A89A /* LoanOfferViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C447EF7B27DF8BB40088A89A /* LoanOfferViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -80,6 +86,12 @@
 		C447EF6627DF82690088A89A /* PureLayout.xcframework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcframework; name = PureLayout.xcframework; path = Carthage/Build/PureLayout.xcframework; sourceTree = "<group>"; };
 		C447EF6A27DF82DC0088A89A /* LoanDataField.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoanDataField.swift; sourceTree = "<group>"; };
 		C447EF6D27DF83360088A89A /* UIStackview+extensions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIStackview+extensions.swift"; sourceTree = "<group>"; };
+		C447EF7127DF8B330088A89A /* LoanOfferInteractor.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoanOfferInteractor.swift; sourceTree = "<group>"; };
+		C447EF7327DF8B400088A89A /* LoanOfferModule.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoanOfferModule.swift; sourceTree = "<group>"; };
+		C447EF7527DF8B8C0088A89A /* LoanOfferPresenter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoanOfferPresenter.swift; sourceTree = "<group>"; };
+		C447EF7727DF8B9A0088A89A /* LoanOfferProtocols.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoanOfferProtocols.swift; sourceTree = "<group>"; };
+		C447EF7927DF8BA70088A89A /* LoanOfferRouter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoanOfferRouter.swift; sourceTree = "<group>"; };
+		C447EF7B27DF8BB40088A89A /* LoanOfferViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoanOfferViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -200,6 +212,7 @@
 		C447EF5727DF7C6D0088A89A /* Modules */ = {
 			isa = PBXGroup;
 			children = (
+				C447EF7027DF8B140088A89A /* LoanOfferModule */,
 				C447EF5827DF7C750088A89A /* LoanApplicationModule */,
 			);
 			path = Modules;
@@ -233,6 +246,19 @@
 				C447EF6D27DF83360088A89A /* UIStackview+extensions.swift */,
 			);
 			path = Extensions;
+			sourceTree = "<group>";
+		};
+		C447EF7027DF8B140088A89A /* LoanOfferModule */ = {
+			isa = PBXGroup;
+			children = (
+				C447EF7127DF8B330088A89A /* LoanOfferInteractor.swift */,
+				C447EF7327DF8B400088A89A /* LoanOfferModule.swift */,
+				C447EF7527DF8B8C0088A89A /* LoanOfferPresenter.swift */,
+				C447EF7727DF8B9A0088A89A /* LoanOfferProtocols.swift */,
+				C447EF7927DF8BA70088A89A /* LoanOfferRouter.swift */,
+				C447EF7B27DF8BB40088A89A /* LoanOfferViewController.swift */,
+			);
+			path = LoanOfferModule;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -340,15 +366,21 @@
 				C447EF6027DF7CF40088A89A /* LoanApplicationProtoocols.swift in Sources */,
 				C447EF0F27DF75C50088A89A /* AppDelegate.swift in Sources */,
 				C447EF4A27DF79730088A89A /* CreditScoreService.swift in Sources */,
+				C447EF7C27DF8BB40088A89A /* LoanOfferViewController.swift in Sources */,
 				C447EF4427DF77380088A89A /* LoanConstraints.swift in Sources */,
+				C447EF7227DF8B330088A89A /* LoanOfferInteractor.swift in Sources */,
 				C447EF6227DF7D090088A89A /* LoanApplicationRouter.swift in Sources */,
 				C447EF6B27DF82DC0088A89A /* LoanDataField.swift in Sources */,
+				C447EF7827DF8B9A0088A89A /* LoanOfferProtocols.swift in Sources */,
 				C447EF4227DF77180088A89A /* AppModule.swift in Sources */,
 				C447EF6E27DF83360088A89A /* UIStackview+extensions.swift in Sources */,
+				C447EF7A27DF8BA70088A89A /* LoanOfferRouter.swift in Sources */,
 				C447EF5427DF7A7C0088A89A /* LoanApplicationValidator.swift in Sources */,
+				C447EF7627DF8B8C0088A89A /* LoanOfferPresenter.swift in Sources */,
 				C447EF5627DF7BD50088A89A /* DecisionService.swift in Sources */,
 				C447EF6427DF7D1A0088A89A /* LoanApplicationViewController.swift in Sources */,
 				C447EF5E27DF7CE30088A89A /* LoanApplicationPresenter.swift in Sources */,
+				C447EF7427DF8B400088A89A /* LoanOfferModule.swift in Sources */,
 				C447EF5027DF7A490088A89A /* LoanModels.swift in Sources */,
 				C447EF4D27DF79F10088A89A /* DecisionEngine.swift in Sources */,
 				C447EF5A27DF7CA40088A89A /* LoanApplicationInteractor.swift in Sources */,

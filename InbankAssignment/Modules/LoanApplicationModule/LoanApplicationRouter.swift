@@ -21,10 +21,12 @@ class LoanApplicationRouter: LoanApplicationRouting {
     }
 
     func routeToDeclinedOffer() {
-
+        let vc = moduleFactory.makeSorryOffer(with: navigationController).assemble()!
+        navigationController.pushViewController(vc, animated: true)
     }
 
     func routeToLoanOffer(amount: Int, period: Int) {
-
+        let vc = moduleFactory.makeLoanOffer(with: navigationController, amount: amount, period: period).assemble()!
+        navigationController.pushViewController(vc, animated: true)
     }
 }

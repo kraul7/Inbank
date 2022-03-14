@@ -10,7 +10,6 @@
 		C447EF0F27DF75C50088A89A /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = C447EF0E27DF75C50088A89A /* AppDelegate.swift */; };
 		C447EF1827DF75C70088A89A /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = C447EF1727DF75C70088A89A /* Assets.xcassets */; };
 		C447EF1B27DF75C70088A89A /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = C447EF1927DF75C70088A89A /* LaunchScreen.storyboard */; };
-		C447EF2627DF75C70088A89A /* InbankAssignmentTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = C447EF2527DF75C70088A89A /* InbankAssignmentTests.swift */; };
 		C447EF4027DF76E70088A89A /* AppLoader.swift in Sources */ = {isa = PBXBuildFile; fileRef = C447EF3F27DF76E70088A89A /* AppLoader.swift */; };
 		C447EF4227DF77180088A89A /* AppModule.swift in Sources */ = {isa = PBXBuildFile; fileRef = C447EF4127DF77180088A89A /* AppModule.swift */; };
 		C447EF4427DF77380088A89A /* LoanConstraints.swift in Sources */ = {isa = PBXBuildFile; fileRef = C447EF4327DF77380088A89A /* LoanConstraints.swift */; };
@@ -35,6 +34,12 @@
 		C447EF7827DF8B9A0088A89A /* LoanOfferProtocols.swift in Sources */ = {isa = PBXBuildFile; fileRef = C447EF7727DF8B9A0088A89A /* LoanOfferProtocols.swift */; };
 		C447EF7A27DF8BA70088A89A /* LoanOfferRouter.swift in Sources */ = {isa = PBXBuildFile; fileRef = C447EF7927DF8BA70088A89A /* LoanOfferRouter.swift */; };
 		C447EF7C27DF8BB40088A89A /* LoanOfferViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C447EF7B27DF8BB40088A89A /* LoanOfferViewController.swift */; };
+		C447EF7F27DFB9B60088A89A /* MockCreditScoreService.swift in Sources */ = {isa = PBXBuildFile; fileRef = C447EF7E27DFB9B60088A89A /* MockCreditScoreService.swift */; };
+		C447EF8227DFBA8A0088A89A /* DecisionEngineImplTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = C447EF8127DFBA8A0088A89A /* DecisionEngineImplTests.swift */; };
+		C447EF8527DFC0F00088A89A /* LoanApplicationModuleMocks.swift in Sources */ = {isa = PBXBuildFile; fileRef = C447EF8427DFC0F00088A89A /* LoanApplicationModuleMocks.swift */; };
+		C447EF8727DFC3F60088A89A /* LoanApplicationPresenterTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = C447EF8627DFC3F60088A89A /* LoanApplicationPresenterTests.swift */; };
+		C447EF8927DFC6690088A89A /* LoanApplicationInteractorTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = C447EF8827DFC6690088A89A /* LoanApplicationInteractorTests.swift */; };
+		C447EF8B27DFC9930088A89A /* MockDecisionService.swift in Sources */ = {isa = PBXBuildFile; fileRef = C447EF8A27DFC9930088A89A /* MockDecisionService.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -68,7 +73,6 @@
 		C447EF1A27DF75C70088A89A /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		C447EF1C27DF75C70088A89A /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		C447EF2127DF75C70088A89A /* InbankAssignmentTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = InbankAssignmentTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
-		C447EF2527DF75C70088A89A /* InbankAssignmentTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = InbankAssignmentTests.swift; sourceTree = "<group>"; };
 		C447EF3F27DF76E70088A89A /* AppLoader.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppLoader.swift; sourceTree = "<group>"; };
 		C447EF4127DF77180088A89A /* AppModule.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppModule.swift; sourceTree = "<group>"; };
 		C447EF4327DF77380088A89A /* LoanConstraints.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoanConstraints.swift; sourceTree = "<group>"; };
@@ -92,6 +96,12 @@
 		C447EF7727DF8B9A0088A89A /* LoanOfferProtocols.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoanOfferProtocols.swift; sourceTree = "<group>"; };
 		C447EF7927DF8BA70088A89A /* LoanOfferRouter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoanOfferRouter.swift; sourceTree = "<group>"; };
 		C447EF7B27DF8BB40088A89A /* LoanOfferViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoanOfferViewController.swift; sourceTree = "<group>"; };
+		C447EF7E27DFB9B60088A89A /* MockCreditScoreService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MockCreditScoreService.swift; sourceTree = "<group>"; };
+		C447EF8127DFBA8A0088A89A /* DecisionEngineImplTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DecisionEngineImplTests.swift; sourceTree = "<group>"; };
+		C447EF8427DFC0F00088A89A /* LoanApplicationModuleMocks.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoanApplicationModuleMocks.swift; sourceTree = "<group>"; };
+		C447EF8627DFC3F60088A89A /* LoanApplicationPresenterTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoanApplicationPresenterTests.swift; sourceTree = "<group>"; };
+		C447EF8827DFC6690088A89A /* LoanApplicationInteractorTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoanApplicationInteractorTests.swift; sourceTree = "<group>"; };
+		C447EF8A27DFC9930088A89A /* MockDecisionService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MockDecisionService.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -150,7 +160,9 @@
 		C447EF2427DF75C70088A89A /* InbankAssignmentTests */ = {
 			isa = PBXGroup;
 			children = (
-				C447EF2527DF75C70088A89A /* InbankAssignmentTests.swift */,
+				C447EF8327DFC0AE0088A89A /* LoanApplicationModuleTests */,
+				C447EF8027DFBA620088A89A /* ServiceTests */,
+				C447EF7D27DFB9980088A89A /* Mocks */,
 			);
 			path = InbankAssignmentTests;
 			sourceTree = "<group>";
@@ -259,6 +271,33 @@
 				C447EF7B27DF8BB40088A89A /* LoanOfferViewController.swift */,
 			);
 			path = LoanOfferModule;
+			sourceTree = "<group>";
+		};
+		C447EF7D27DFB9980088A89A /* Mocks */ = {
+			isa = PBXGroup;
+			children = (
+				C447EF7E27DFB9B60088A89A /* MockCreditScoreService.swift */,
+				C447EF8A27DFC9930088A89A /* MockDecisionService.swift */,
+			);
+			path = Mocks;
+			sourceTree = "<group>";
+		};
+		C447EF8027DFBA620088A89A /* ServiceTests */ = {
+			isa = PBXGroup;
+			children = (
+				C447EF8127DFBA8A0088A89A /* DecisionEngineImplTests.swift */,
+			);
+			path = ServiceTests;
+			sourceTree = "<group>";
+		};
+		C447EF8327DFC0AE0088A89A /* LoanApplicationModuleTests */ = {
+			isa = PBXGroup;
+			children = (
+				C447EF8427DFC0F00088A89A /* LoanApplicationModuleMocks.swift */,
+				C447EF8627DFC3F60088A89A /* LoanApplicationPresenterTests.swift */,
+				C447EF8827DFC6690088A89A /* LoanApplicationInteractorTests.swift */,
+			);
+			path = LoanApplicationModuleTests;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -392,7 +431,12 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				C447EF2627DF75C70088A89A /* InbankAssignmentTests.swift in Sources */,
+				C447EF8527DFC0F00088A89A /* LoanApplicationModuleMocks.swift in Sources */,
+				C447EF8227DFBA8A0088A89A /* DecisionEngineImplTests.swift in Sources */,
+				C447EF8B27DFC9930088A89A /* MockDecisionService.swift in Sources */,
+				C447EF8727DFC3F60088A89A /* LoanApplicationPresenterTests.swift in Sources */,
+				C447EF7F27DFB9B60088A89A /* MockCreditScoreService.swift in Sources */,
+				C447EF8927DFC6690088A89A /* LoanApplicationInteractorTests.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

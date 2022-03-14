@@ -21,7 +21,8 @@ struct AppLoader {
     }
 
     func build() {
-        let viewController = UIViewController()
+        let module = moduleFactory.makeLoanApplication(with: navigationController)
+        let viewController = module.assemble()
         setRootViewController(viewController)
     }
 

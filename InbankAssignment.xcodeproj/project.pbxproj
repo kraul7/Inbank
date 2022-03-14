@@ -14,6 +14,7 @@
 		C447EF4027DF76E70088A89A /* AppLoader.swift in Sources */ = {isa = PBXBuildFile; fileRef = C447EF3F27DF76E70088A89A /* AppLoader.swift */; };
 		C447EF4227DF77180088A89A /* AppModule.swift in Sources */ = {isa = PBXBuildFile; fileRef = C447EF4127DF77180088A89A /* AppModule.swift */; };
 		C447EF4427DF77380088A89A /* LoanConstraints.swift in Sources */ = {isa = PBXBuildFile; fileRef = C447EF4327DF77380088A89A /* LoanConstraints.swift */; };
+		C447EF4A27DF79730088A89A /* CreditScoreService.swift in Sources */ = {isa = PBXBuildFile; fileRef = C447EF4927DF79730088A89A /* CreditScoreService.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -37,6 +38,7 @@
 		C447EF3F27DF76E70088A89A /* AppLoader.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppLoader.swift; sourceTree = "<group>"; };
 		C447EF4127DF77180088A89A /* AppModule.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppModule.swift; sourceTree = "<group>"; };
 		C447EF4327DF77380088A89A /* LoanConstraints.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoanConstraints.swift; sourceTree = "<group>"; };
+		C447EF4927DF79730088A89A /* CreditScoreService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CreditScoreService.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -78,6 +80,7 @@
 		C447EF0D27DF75C50088A89A /* InbankAssignment */ = {
 			isa = PBXGroup;
 			children = (
+				C447EF4627DF79020088A89A /* Services */,
 				C447EF3E27DF76BA0088A89A /* App */,
 				C447EF1727DF75C70088A89A /* Assets.xcassets */,
 				C447EF1927DF75C70088A89A /* LaunchScreen.storyboard */,
@@ -103,6 +106,14 @@
 				C447EF4327DF77380088A89A /* LoanConstraints.swift */,
 			);
 			path = App;
+			sourceTree = "<group>";
+		};
+		C447EF4627DF79020088A89A /* Services */ = {
+			isa = PBXGroup;
+			children = (
+				C447EF4927DF79730088A89A /* CreditScoreService.swift */,
+			);
+			path = Services;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -207,6 +218,7 @@
 			files = (
 				C447EF4027DF76E70088A89A /* AppLoader.swift in Sources */,
 				C447EF0F27DF75C50088A89A /* AppDelegate.swift in Sources */,
+				C447EF4A27DF79730088A89A /* CreditScoreService.swift in Sources */,
 				C447EF4427DF77380088A89A /* LoanConstraints.swift in Sources */,
 				C447EF4227DF77180088A89A /* AppModule.swift in Sources */,
 			);
